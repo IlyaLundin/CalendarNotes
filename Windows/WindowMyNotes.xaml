@@ -1,0 +1,29 @@
+﻿<Window x:Class="CalendarNotes.WindowMyNotes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarNotes"
+        mc:Ignorable="d"
+        Title="Мои заметки" Height="420" Width="650" Icon="/Resources/feather1.ico" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"></ColumnDefinition>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="195"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="90"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="2">
+            <Button x:Name="ButtonClose" Style="{StaticResource ButtonMain}" Click="ButtonClose_Click">Закрыть</Button>
+            <ScrollViewer Height="250" Name="Scroller" Width="440">
+                <TextBlock x:Name="TextBlockMyNotes" Height="Auto" Style="{StaticResource TextBlockMain}" Grid.RowSpan="2"></TextBlock>
+            </ScrollViewer>
+
+        </StackPanel>
+        
+        <Image Source="/Resources/feather.png" Grid.Column="2"></Image>
+    </Grid>
+</Window>

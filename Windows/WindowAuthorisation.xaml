@@ -1,0 +1,25 @@
+﻿<Window x:Class="CalendarNotes.WindowAuthorisation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarNotes"
+        mc:Ignorable="d"
+        Title="Вход в приложение CalendarNotes" Height="535" Width="350"  Icon="/Resources/feather1.ico">
+    
+        <StackPanel>
+        <TextBlock Style="{StaticResource TextBlockFrame}"></TextBlock>
+            <TextBlock Style="{StaticResource TextBlockAuthorisation}">Логин</TextBlock>
+            <TextBox Name="Login" Style="{StaticResource TextBoxAuthorisation}" TextChanged="Login_TextChanged"></TextBox>
+            <TextBlock Name="Parole" Style="{StaticResource TextBlockAuthorisation}" Visibility="Hidden">Пароль</TextBlock>
+            <Grid>
+                <TextBox Name="PasswordText" Style="{StaticResource TextBoxAuthorisation}" Visibility="Hidden" ></TextBox>
+                <PasswordBox Name="Password" Height="40" Width="175" FontFamily="Comic Sans MS" FontSize="15" Background="#818181" Margin="10" Visibility="Hidden" PasswordChanged="Password_PasswordChanged" VerticalContentAlignment="Center" Padding="5"></PasswordBox>
+            </Grid>
+        <CheckBox Name="Checker" IsChecked="False" Checked="Checker_Checked" Unchecked="Checker_Unchecked" Visibility="Hidden" Style="{StaticResource CheckBoxMain}">Показать пароль</CheckBox>
+        <Button Name="ButtonAuthorise" Style="{StaticResource ButtonAuthorisation}" Click="Authorise" Visibility="Hidden">Войти</Button>
+        <TextBlock Style="{StaticResource TextBlockFrame}"></TextBlock>
+
+    </StackPanel>
+    
+</Window>
