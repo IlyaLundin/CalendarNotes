@@ -19,7 +19,7 @@
         <CheckBox Name="Checker" IsChecked="False" Checked="Checker_Checked" Unchecked="Checker_Unchecked" Visibility="Hidden" Style="{StaticResource CheckBoxMain}">Показать пароль</CheckBox>
         <Button Name="ButtonAuthorise" Style="{StaticResource ButtonAuthorisation}" Click="Authorise" Visibility="Hidden">Войти</Button>
         <TextBlock Style="{StaticResource TextBlockFrame}"></TextBlock>
-
+        <TextBlock Style="{StaticResource TextBlockFrame}" Text="qwerty"></TextBlock>
     </StackPanel>
     
 </Window>

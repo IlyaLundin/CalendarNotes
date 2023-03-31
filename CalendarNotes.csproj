@@ -58,11 +58,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="PageManager.cs" />
+    <Compile Include="Pages\PageGIT.xaml.cs">
+      <DependentUpon>PageGIT.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageHelp.xaml.cs">
       <DependentUpon>PageHelp.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageMyNotes.xaml.cs">
       <DependentUpon>PageMyNotes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageQWERTY.xaml.cs">
+      <DependentUpon>PageQWERTY.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageWork.xaml.cs">
       <DependentUpon>PageWork.xaml</DependentUpon>
@@ -79,11 +85,19 @@
     <Compile Include="Windows\WindowMyNotes.xaml.cs">
       <DependentUpon>WindowMyNotes.xaml</DependentUpon>
     </Compile>
+    <Page Include="Pages\PageGIT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageHelp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\PageMyNotes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageQWERTY.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
